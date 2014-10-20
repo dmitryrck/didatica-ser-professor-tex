@@ -1,0 +1,27 @@
+\ifdefined\BLACKBG
+  \setbeamercolor{block body}{bg=normal text.bg!90!black}
+  \setbeamercolor{block body example}{bg=normal text.bg!90!black}
+  \setbeamercolor{block title alerted}{use={normal text,alerted text},fg=alerted text.fg!75!normal text.fg,bg=normal text.bg!75!white}
+  \setbeamercolor{block title}{bg=black}
+  \setbeamercolor{block title example}{use={normal text,example text},fg=example text.fg!75!normal text.fg,bg=normal text.bg!75!white}
+  \setbeamercolor{fine separation line}{}
+  \setbeamercolor{frametitle}{fg=brown}
+  \setbeamercolor{item projected}{fg=white}
+  \setbeamercolor{normal text}{bg=black,fg=white}
+  \setbeamercolor{separation line}{}
+  \setbeamercolor{structure}{bg=black,fg=white}
+  \setbeamercolor{title}{fg=white}
+  \setbeamercolor{titlelike}{fg=white}
+\fi
+
+\newcommand{\invertbgcolor}{
+  \ifdefined\BLACKBG
+    %\setbeamercolor{normal text}{bg=white,fg=black}
+  \fi
+}
+
+\newcommand{\backbgcolor}{
+  \ifdefined\BLACKBG
+    %\setbeamercolor{normal text}{bg=white,fg=black}
+  \fi
+}
